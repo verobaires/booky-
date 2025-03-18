@@ -1,0 +1,194 @@
+/* 
+COMO TRABAJAMOS CON CSS
+selector {
+  propiedad: valor;
+} */
+
+
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* FONT FACE uso de tipografia descargada */
+@font-face {
+    font-family: "Boston Traffic";
+    src: url(../assets/fonts/boston_traffic.ttf);
+}
+
+/* RESETEO con selector universal, aplica estilos a cada uno de los elementos de los html se recomienda solo para reseteo  */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+ul {
+    list-style: none;/* saca bullets de lista */
+}
+/* aplica a todos los enlaces dentro de items de lista */
+li>a{
+    color: black; /* saca color por default de enlace */
+    text-decoration: none; /* saca subrayado por default enlaces */
+    font-size: 18px;
+}
+
+
+/* HERENCIA al aplicarla en la etiqueta body afecta a todos los elementos de todos los html */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* CASCADA siempre va a prevalecer lo que esta en ultimo lugar, en este caso a misma propiedad en el mismo elemento va a aplicar color blue violet */
+h1 {
+  color: rgba(52, 180, 59, 0.721);
+}
+
+h1 {
+    color: blueviolet;
+  }
+
+/* ESPECIFICIDAD = estoy marcando especificamente estos estilos a la clase que esta dentro del id parallax*/
+
+#parallax .colorRojo{
+    color: rgb(222, 6, 6);
+}
+
+/* estilos por CLASE puedo colocar muchas clases a un mismo elemento, solo aplica a los elementos que tengan esa clase La clase tiene mas peso que la etiqueta. REUTILIZABLE */
+.fondoHeader {
+  background-color: antiquewhite;
+}
+
+/* estilo por ID, es identificador unico es decir solo puedo tener 1 id no lo puedo reutilizar. El id tiene mas peso que la clase */
+
+#parallax {
+  background-image: url(../assets/img/bg-nenafullscreen.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+a{
+    text-decoration: none;
+}
+
+#colorAmarillo{
+    color: gold;
+}
+
+.encabezadoMayuscula{
+    text-transform: uppercase;
+    /* cambio a mayusculas */
+}
+
+/* lo dejo sin especificidad porque lo reutilizo en diferentes elementos */
+.fondoTransparente{
+    background-color: rgba(234, 227, 218, 0.654);
+}
+.fondoDark{
+    background-color: rgba(168, 164, 159, 0.589);
+}
+/* aca indico que a la seccion con la clase listaOrdenada aplicar estilos, cuando no dejo espacio estoy indicando que no hay anidacion */
+section.listaOrdenada {
+    background-color: rgba(230, 227, 81, 0.281);
+}
+
+section.listaOrdenada h3 {
+    color: rgb(124, 8, 8);
+    font-size: 35px;
+    text-align: center;
+}
+
+.tipografiaRosa{    
+    font-weight: 600;
+    font-size: 15px;
+    font-style: italic;
+    color: rgb(167, 65, 143);
+}
+
+.fondoFooter {
+    background-color: rgb(208, 206, 206);
+}
+
+.fondoFooter .redesSociales a{
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* ajusto tamaño de la imagen en el form del footer */
+footer form button img {
+    width: 20px;
+}
+
+footer .copy, .textCenter {
+    text-align: center;    
+}
+
+/* estilos aplicados solo en catalogo */
+.ofertas .sumar{
+    font-size: 25px;
+    color: red;
+    text-decoration: none;
+}
+
+.ultimasUnidades .masInfo{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(47, 24, 140);
+    text-decoration: none;
+}
+
+/* estilos aplicados solo en contacto */
+
+.encabezadoContacto, .encabezadoContacto2{
+    text-align: center;
+    /* aplico el mismo estilo a dos selectores */
+}
+
+.encabezadoContacto{
+    color:rgb(224, 17, 220)
+}
+
+.encabezadoContacto2{
+    color:rgba(52, 180, 59, 0.721);
+    background-color: rgb(195, 195, 195);    
+}
+
+form textarea{
+    display: block;
+}
+
+/* estilos aplicados solo a encontranos */
+
+/* USO ETIQUETA SPAN  */
+.direccion span{
+    font-weight: 700;
+    color:rgb(47, 24, 140);
+}
+
+/* estilos aplicados solo a nosotros */
+
+.tituloNosotros{
+    font-family: "Boston Traffic", sans-serif;
+    font-size: 25px;
+    color:rgb(21, 116, 218)
+}
+
+.video video{
+    width: 50%;
+    height: 200px;
+}
+
+.podcast iframe{
+    width: 50%;
+}
+
+.textJustificado{
+    text-align: justify;
+}
+
+.logoWhats{
+    width: 5%;
+}

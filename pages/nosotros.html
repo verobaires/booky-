@@ -1,0 +1,130 @@
+<!-- 
+HTML
+    Armar estructura basica de html+
+    Etiquetas principales nav, header, main, footer+
+    Lista desordenada para el menu+
+    Encabezado h1 para titulo principal+
+    Encabezado h2 con una parte del contenido dentro de un span+
+    Contenido textual de relleno+
+    Incluir una seccion con una imagen de fondo
+    Incluir un video que no debe tener sonido, de inicio automatico y sin fin+
+    Incluir un podcast de spotify+
+    
+CSS
+    Cambiar la tipografia de un titulo por una tipografia descargada +
+    Por la tipografia BOSTON TRAFFIC descargada de font squirrel https://www.fontsquirrel.com/fonts/Boston-Traffic?filter%5Bclassifications%5D%5B0%5D=stencil&sort=hot
+    El titulo debe tener mayor  grosor y debe estar centrado   +
+    Todos los estilos con clases +
+      En lugar de darle un color de fondo a la pagina darle un patron de fondo con background image  +
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | booky</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <!-- link fontawesome -->
+  <script src="https://kit.fontawesome.com/29c3be7601.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="fondoHeader">
+        <div>
+            <a href="../index.html">
+                <img src="../assets/img/favicon.ico" alt="logo Booky">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">INICIO</a></li>
+                <li><a href="#">CONTACTO</a></li>
+                <li><a href="encontranos.html">ENCUENTRANOS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="catalogo.html">CATALOGO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="tituloNosotros">BOOKY</h1>
+        <h2> LA<span class="otroRojo"> MEJOR</span> <span class="subtituloNosotros"> LIBRERIA</span> INFANTIL  </h2>
+
+        <section>
+            <p class="textJustificado" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, rem unde, nam id ducimus
+                accusamus voluptate vitae quia dolores mollitia alias fugiat quaerat debitis? Voluptate quisquam rem
+                tempora tenetur voluptatum?
+                Quae aspernatur expedita numquam consequuntur, architecto maiores corrupti cupiditate in quis molestiae
+                commodi amet dolorem excepturi minima ab ad a. Inventore, assumenda sunt maiores quas quo saepe
+                accusantium. Eligendi, ea!
+                Maiores assumenda similique, nihil odio esse, in eos, aliquid laudantium quae distinctio sapiente
+                accusantium repellendus voluptas? Ex est ipsam cupiditate libero nam minus perspiciatis, doloremque sint
+                autem totam, delectus quas!
+                tur, laborum dolore accusamus doloribus neque distinctio.
+                Dignissimos vitae corporis harum voluptatum labore perspiciatis, odit asperiores. Voluptate eveniet
+                quaerat labore adipisci iure, doloremque illum modi delectus velit quidem consequuntur molestias
+                veritatis maiores, quasi nostrum similique aspernatur nihil?
+                Est, nihil. Quod sapiente, suscipit explicabo impedit nemo cum ducimus vel? Tempora, possimus nemo!
+                Eius, vero perferendis incidunt molestias sapiente obcaecati iusto rerum ullam dolor magni qui?
+                Consectetur, iusto tenetur?</p>
+        </section>
+        </section>
+
+        <section class="video">
+            <h2>VIDEO INVERNAL</h2>
+            <video src="../assets/videos/Winter.mp4" autoplay muted controls loop></video>
+        </section>
+
+        <section>
+
+         
+            <div class="podcast">
+                <h2>SI ESCUCHAMOS ALGO DE MUSICA?</h2>
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/show/6Z4gbxrzelqVU3syDH3JzI?utm_source=generator&theme=0"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy"></iframe>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="fondoFooter">
+        <div class="redesSociales">
+            <a href="https://twitter.com " target="_blank">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://www.twitch.tv/" target="_blank">
+                <i class="fa-brands fa-discord"></i>
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>           
+        </div>
+        <div>
+            <form action="">
+                <input type="email" name="" id="" placeholder="Ingrese su mail">
+                <button type="submit">
+                    <img src="../assets/img/logo-enviar.png" alt="logo enviar">
+                </button>
+
+            </form>
+        </div>
+        <h6>&#169;Copyright 2024 </h6>
+    </footer>
+
+    <!--   -->
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=1144556677888&text=Hola%20quisiera%20saber%20" target="_blank">
+            <img class="logoWhats" src="../assets/img/logo-whatsapp.png" alt="whatsapp" />
+        </a>
+    </div>
+
+</body>
+
+</html>
